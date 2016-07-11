@@ -1,0 +1,21 @@
+{
+       "namespace":"com.ifree.serrpc.builder",
+       "type":"record",
+       "name":"Members",
+       "fields":[
+            {
+                   "name":"userName",
+                   "type":"string"
+            },
+            {
+                   "name":"userPwd",
+                   "type":"string"
+            },
+            {
+                   "name":"realName",
+                   "type":"string"
+            }
+            
+      ]
+      
+}

@@ -1,0 +1,55 @@
+{
+       "namespace":"com.ifree.serrpc.builder",
+       "protocol":"MemberIFace",
+       "types":[
+            {
+                   "type":"record",
+                   "name":"Members",
+                   "fields":[
+                        {
+                               "name":"userName",
+                               "type":"string"
+                        },
+                        {
+                               "name":"userPwd",
+                               "type":"string"
+                        },
+                        {
+                               "name":"realName",
+                               "type":[
+                                     "string",
+                                     "null"
+                              ]
+                              
+                        }
+                        
+                  ]
+                  
+            },
+            {
+                   "type":"record",
+                   "name":"Retmsg",
+                   "fields":[
+                        {
+                               "name":"msg",
+                               "type":"string"
+                        }
+                  ]
+            }
+            
+      ],
+       "messages":{
+             "login":{
+                   "doc":"member login.",
+                   "request":[
+                        {
+                               "name":"m",
+                               "type":"Members"
+                        }
+                        
+                  ],
+                   "response":"Retmsg"
+            }
+            
+      }
+}
